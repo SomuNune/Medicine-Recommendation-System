@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer - Medicine Recommendation System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: #d3e3f9;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="{{ url_for('index') }}">Health Center</a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{{ url_for('developer') }}">Developer</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('blog') }}">Blog</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <h2 class="text-center mb-4">Meet the Developer</h2>
+
+    <div class="card shadow p-4">
+
+        <p class="text-center">
+            Hello, We are <b>Somu Nune, Vignesh, Kiran</b>,  B.Tech student's passionate about software development and machine learning.
+        </p>
+
+        <hr>
+
+        <h5>My Skills & Interests</h5>
+        <p>
+            We have a strong foundation in Python and experience in developing machine learning-based applications.
+            We enjoy building systems that combine data analysis with user-friendly interfaces.
+        </p>
+
+        <h5>Project Motivation</h5>
+        <p>
+            The Medicine Recommendation System was developed to apply machine learning in the healthcare domain.
+            The goal is to help users identify possible diseases based on symptoms and provide recommendations
+            such as medicines, precautions, diet, and workouts.
+        </p>
+
+        <h5>Learning Experience</h5>
+        <p>
+            This project helped us gain hands-on experience in Flask, machine learning model integration,
+            and full-stack development. It enhanced my understanding of building real-world applications.
+        </p>
+
+        <h5>Future Goals</h5>
+        <p>
+            We aim to continue improving my skills in software development and emerging technologies,
+            and to build applications that are practical, efficient, and impactful.
+        </p>
+
+        <hr>
+
+        <p class="text-center">
+            Thank you for exploring this project.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

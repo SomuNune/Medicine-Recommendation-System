@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - Medicine Recommendation System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: #d3e3f9;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="{{ url_for('index') }}">Health Center</a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('developer') }}">Developer</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{{ url_for('blog') }}">Blog</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Building a Symptom-Based Disease Diagnosis Web App with Flask and Machine Learning
+    </h2>
+
+    <div class="card shadow p-4">
+
+        <p>
+            In today’s digital era, access to quick and reliable healthcare information is becoming increasingly important.
+            This project focuses on developing a symptom-based disease diagnosis web application using Flask and a
+            machine learning model to help users identify potential illnesses based on symptoms.
+        </p>
+
+        <h4>The Problem</h4>
+        <p>
+            People often experience symptoms but lack immediate medical guidance. Since many diseases share similar
+            symptoms, it becomes difficult to identify the exact condition quickly.
+        </p>
+
+        <h4>The Solution</h4>
+        <p>
+            This system allows users to enter their symptoms and receive predictions about possible diseases using
+            a trained Support Vector Machine (SVM) model.
+        </p>
+
+        <h5>How It Works</h5>
+        <ol>
+            <li><b>Symptom Input:</b> Users enter symptoms through a simple interface.</li>
+            <li><b>Machine Learning Model:</b> A trained SVM model processes the data.</li>
+            <li><b>Prediction:</b> The system predicts the most likely disease.</li>
+            <li><b>Additional Information:</b> Provides description, precautions, medications, diet, and workouts.</li>
+        </ol>
+
+        <h4>Key Features</h4>
+        <ul>
+            <li><b>User-Friendly Interface:</b> Easy and clean design.</li>
+            <li><b>Accurate Predictions:</b> Machine learning-based results.</li>
+            <li><b>Medicine Recommendation:</b> Suggests medicines based on disease.</li>
+            <li><b>Comprehensive Guidance:</b> Includes precautions, diet, and workouts.</li>
+            <li><b>Educational Content:</b> Improves health awareness.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>
+            This project demonstrates how machine learning and web technologies can be combined to build practical
+            healthcare solutions. It helps users gain quick insights into their health conditions and promotes
+            awareness, making healthcare information more accessible and user-friendly.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

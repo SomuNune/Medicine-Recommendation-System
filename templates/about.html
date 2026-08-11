@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Medicine Recommendation System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: #d3e3f9;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="{{ url_for('index') }}">Health Center</a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{{ url_for('about') }}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('developer') }}">Developer</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('blog') }}">Blog</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <h2 class="text-center mb-4">About Us</h2>
+
+    <div class="card shadow p-4">
+
+        <p class="text-center">
+            Welcome to the <b>Medicine Recommendation System</b>, where healthcare meets technology.
+        </p>
+
+        <hr>
+
+        <h5>Our Vision</h5>
+        <p>
+            We aim to make healthcare information easily accessible to everyone.
+            Our goal is to help users understand their health conditions quickly and effectively.
+        </p>
+
+        <h5>About the Project</h5>
+        <p>
+            This system is a machine learning-based web application that predicts possible diseases
+            based on user-input symptoms and provides relevant medicine recommendations along with
+            precautions, diet suggestions, and workout guidance.
+        </p>
+
+        <h5>How It Works</h5>
+        <p>
+            The application uses a trained machine learning model to analyze symptoms entered by the user.
+            Based on this input, it predicts the most likely disease and provides useful medical insights
+            to assist the user.
+        </p>
+
+        <h5>Key Features</h5>
+        <ul>
+            <li>Symptom-based disease prediction</li>
+            <li>Medicine recommendation</li>
+            <li>Precautions and health tips</li>
+            <li>Diet and workout suggestions</li>
+            <li>Simple and user-friendly interface</li>
+        </ul>
+
+        <h5>Your Well-being</h5>
+        <p>
+            This system is designed to provide guidance and awareness. It is not a replacement for
+            professional medical advice but a tool to help users make informed decisions.
+        </p>
+
+        <h5>Conclusion</h5>
+        <p>
+            By combining machine learning with web technology, this project aims to provide
+            a simple and efficient healthcare support system for users.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
